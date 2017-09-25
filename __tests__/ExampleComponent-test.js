@@ -3,7 +3,7 @@ jest.dontMock("../src/WithContext");
 
 import * as React from "react"
 import * as ReactDOM from "react-dom"
-import * as TestUtils from "react-addons-test-utils"
+import * as TestUtils from "react-dom/test-utils"
 
 const WithContext = require("../src/WithContext").default;
 const ExampleComponent = require("../src/ExampleComponent").default;

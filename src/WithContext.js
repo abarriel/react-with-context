@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import * as React from 'react'
 
 export default class WithContext extends React.Component {
@@ -14,7 +15,7 @@ export default class WithContext extends React.Component {
         DynamicWithContext.childContextTypes = {};
         const context = this.props.context;
         for (const propertyName in context) {
-            DynamicWithContext.childContextTypes[propertyName] = React.PropTypes.any;
+            DynamicWithContext.childContextTypes[propertyName] = PropTypes.any;
         }
 
         this.validateChildren();
